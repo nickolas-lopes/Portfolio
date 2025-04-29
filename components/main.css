@@ -1,0 +1,26 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+    margin: auto;
+    margin-top: 100px;
+}
+.perfil{
+    width: 350px;
+}
+.image{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.brief-presentation{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: justify;
+   width: 600px;
+}
+.presentation{
+    color: rgb(137, 74, 195);
+}
