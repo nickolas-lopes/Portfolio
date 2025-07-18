@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicko.Dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Nicko.Dev</h1>
-        <nav>
-            <ul class="links">
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Projetos</a></li>
-            </ul>
-        </nav>
+      <h1>Nicko.Dev</h1>
+      <nav>
+        <ul class="links">
+          <li><a href="#main">Sobre Mim</a></li>
+          <li><a href="#technologies">Tecnologias</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <i class="fa-solid fa-bars burguer-menu"></i>
+      </nav>
     </header>
-    <main>
-        <section class="image">
-            <img src="assets/IMG_20250209_120253_877.png" alt="" class="perfil">
-        </section>
-        <section class="brief-presentation">
-            <h2><strong class="presentation">Olá, eu sou o Nickolas !</strong></h2>
-            <p>Sou um desenvolvedor em início de carreira, apaixonado por tecnologia e em constante evolução. Tenho conhecimentos em HTML, CSS, JavaScript e estou estudando outras técnologias. Gosto de transformar ideias em projetos práticos, sempre buscando escrever código limpo, funcional e que entregue uma boa experiência para o usuário.</p>
-        </section>
-    </main>
-    <section class="about-me">
+    <main id="main">
+      <section class="image">
+        <img src="assets/IMG_20250209_120253_877.png" alt="" class="perfil" />
+      </section>
+
+      <section class="brief-presentation">
+        <h2><strong class="presentation" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Olá, eu sou o Nickolas !</strong></h2>
+        <p data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
+          Sou um desenvolvedor em início de carreira, apaixonado por tecnologia
+          e em constante evolução. Tenho conhecimentos em HTML, CSS, JavaScript
+          e estou estudando outras técnologias. Gosto de transformar ideias em
+          projetos práticos, sempre buscando escrever código limpo, funcional e
+          que entregue uma boa experiência para o usuário.
+        </p>
+        <div class="github" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000"><a href="https://github.com/nickolas-lopes" target="_blank" class="my-github"><i class="fa-brands fa-github"></i>Meu GitHub</a></div>
+      </section>
       
+    </main>
+    <section class="technologies" id="technologies">
+      <h2 class="technologies-title">Tecnologias</h2>
+      <section class="icons">
+        <img src="assets/icons/icons8-html-144.png" alt="" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"/>
+        <img src="assets/icons/icons8-css-144.png" alt="" data-aos="fade-right"    data-aos-delay="1000"data-aos-duration="1000" data-aos-once="true"/>
+        <img src="assets/icons/icons8-javascript-144.png" alt="" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-once="true"/>
+        <img src="assets/icons/icons8-python-144.png" alt="" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="1000" data-aos-once="true"/>
+        <img src="assets/icons/java.png" alt="" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="1000" data-aos-once="true" style="padding-bottom: 20px;">
+      </section>
     </section>
-</body>
+    <section class="projects" id="projects">
+      <h2 class="project-title">Projetos</h2>
+      <section class="card-holder">
+        <section class="card-project">
+          <img src="assets/Akatsuki.png" alt="" class="img-project" />
+          <h3>E-commerce Akatsuki</h3>
+          <p>Projeto feito em HTML, CSS JS e Bootstrap</p>
+          <a href="https://fateclp.github.io/Site-Naruto/index.html"class="project-link" target="_blank">Link do Projeto</a>
+          <a href="https://github.com/FatecLP/Site-Naruto"class="project-link" target="_blank">Link do Repositório</a>
+        </section>
+      </section>
+    </section>
+    <section class="contact">
+      <h2 class="contact-title">Vamos trabalhar juntos ?</h2>
+      <section class="social">
+        <a href="https://www.linkedin.com/in/nickolas-lopes" target="_blank" ><i class="fa-brands fa-linkedin"></i>Conheça meu LinkedIn</a>
+        <p class="mail">Ou mande-me um email: nickolaslopes.developer@gmail.com</p>
+      </section>
+    </section>
+    <script src="scripts/cardAnimation.JS"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

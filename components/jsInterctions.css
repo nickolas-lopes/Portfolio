@@ -1,0 +1,4 @@
+.card-animation{
+    transform: translateY(0px);
+    transition: transform 0.5s ease;
+}

@@ -4,6 +4,7 @@ header{
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    
 }
 h1{
     margin-left: 15px;
@@ -23,4 +24,7 @@ a{
 a:hover{
     color: rgb(214, 193, 234);
     transition: 0.3s;
+}
+.burguer-menu{
+    display: none;
 }
